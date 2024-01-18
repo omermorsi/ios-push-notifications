@@ -30,7 +30,7 @@ async function run() {
           userVisibleOnly: true,
         });
 
-        await fetch("/save-subscription", {
+        await fetch("https://t3portal.online/pushnotifications/add-subscription", {
           method: "post",
           headers: {
             "Content-Type": "application/json",
