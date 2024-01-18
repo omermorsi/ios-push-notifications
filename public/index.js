@@ -26,7 +26,7 @@ async function run() {
         const subscription = await registration.pushManager.subscribe({
           // TODO: Replace with your public vapid key
           applicationServerKey:
-            "BFkG2HKrQ3BYTS_4z1S1pRwNoX4vvQhCwi3q9Hum7nQ8p9FHU3nLAjzmGWet_63jkLD2XXFp2rgranujXvCJd4k",
+            "BFFtI6w_O9CQYE0Wibkt2OKALC9G9pZcQ1rTUYJo9aAhkT966mkmR_Q7nsn6BurVDyrLSwsRk5paSxFZ91v_KRY",
           userVisibleOnly: true,
         });
 
