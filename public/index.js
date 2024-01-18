@@ -13,9 +13,9 @@ async function run() {
   if (areNotificationsGranted) {
     button.innerText = "Send Notification";
 
-    button.addEventListener("click", async () => {
-      await fetch("/send-notification");
-    });
+    // button.addEventListener("click", async () => {
+    //   await fetch("/send-notification");
+    // });
   } else {
     button.addEventListener("click", async () => {
       // Triggers popup to request access to send notifications
@@ -29,14 +29,14 @@ async function run() {
             "BFFtI6w_O9CQYE0Wibkt2OKALC9G9pZcQ1rTUYJo9aAhkT966mkmR_Q7nsn6BurVDyrLSwsRk5paSxFZ91v_KRY",
           userVisibleOnly: true,
         });
-
-        await fetch("/save-subscription", {
-          method: "post",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(subscription),
-        });
+document.getElementById("omer").innerHTML = JSON.stringify(subscription);
+        // await fetch("/save-subscription", {
+        //   method: "post",
+        //   headers: {
+        //     "Content-Type": "application/json",
+        //   },
+        //   body: JSON.stringify(subscription),
+        // });
 
         window.location.reload();
       }
