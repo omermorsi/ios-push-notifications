@@ -37,7 +37,7 @@ document.getElementById("omer").innerHTML = JSON.stringify(subscription);
         //   },
         //   body: JSON.stringify(subscription),
         // });
-
+ 
         //window.location.reload();
       }
     });
